@@ -10,6 +10,7 @@ fun sumArray(){
       sum[i][j] = matriks1[i][j] + matriks2[i][j]
     }
   }
+  
 println("Nilai pertambahan dari kedua array tersebut adalah : ")
 for (baris in sum){
   for(kolom in baris){
