@@ -1,0 +1,24 @@
+fun sumArray(){
+  var baris = 1
+  var kolom = 3
+  var matriks1 = arrayOf(intArrayOf(2,3,4))
+  var matriks2 = arrayOf(intArrayOf(2,5,1))
+  
+  var sum = Array(baris){IntArray(kolom)}
+  for (i in 0..baris - 1){
+    for(j in 0..kolom - 1){
+      sum[i][j] = matriks1[i][j] + matriks2[i][j]
+    }
+  }
+println("Nilai pertambahan dari kedua array tersebut adalah : ")
+for (baris in sum){
+  for(kolom in baris){
+    print("$kolom")
+  }
+  println()
+}
+}
+
+fun main(){
+  sumArray()
+}
